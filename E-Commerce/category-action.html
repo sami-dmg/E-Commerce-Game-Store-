@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action-Game Center</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-pink-50 via-purple-50 to-blue-50">
+
+<nav class="bg-purple-600 text-white p-4 shadow-lg flex justify-between items-center">
+  <h1 class="text-3xl font-bold hover:text-yellow-300 cursor-pointer" onclick="window.location.href='index.html'">Game Center</h1>
+  <button onclick="window.location.href='index.html#cart'" class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold hover:bg-yellow-500">Go to Cart</button>
+</nav>
+
+<section class="p-6 mt-8">
+  <h2 class="text-2xl font-bold mb-6 text-purple-700">Action Games</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <div class="bg-white rounded-3xl shadow-xl p-5 flex flex-col items-center">
+      <div class="w-full h-100 overflow-hidden rounded-2xl mb-4">
+        <img src="images/pubg.jpg" alt="PUBG" class="w-full h-full object-cover">
+      </div>
+      <h3 class="font-bold text-lg text-gray-800">PUBG</h3>
+      <p class="text-gray-500">$25</p>
+      <button class="add-to-cart mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-2xl">Add to Cart</button>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-xl p-5 flex flex-col items-center">
+      <div class="w-full h-100 overflow-hidden rounded-2xl mb-4">
+        <img src="images/re.jpg" alt="Resident Evil 4" class="w-full h-full object-cover">
+      </div>
+      <h3 class="font-bold text-lg text-gray-800">Resident Evil 4</h3>
+      <p class="text-gray-500">$15</p>
+      <button class="add-to-cart mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-2xl">Add to Cart</button>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-xl p-5 flex flex-col items-center">
+      <div class="w-full h-100 overflow-hidden rounded-2xl mb-4">
+        <img src="images/b.jpg" alt="RDR 2" class="w-full h-full object-cover">
+      </div>
+      <h3 class="font-bold text-lg text-gray-800">RDR 2</h3>
+      <p class="text-gray-500">$20</p>
+      <button class="add-to-cart mt-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-2xl">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
